@@ -1,0 +1,30 @@
+<apex:page standardController="Patient__c">
+    <apex:form >
+    <apex:pageblock >
+        
+        <apex:pageBlockSection title="New Patients">
+            <apex:inputField value="{!Patient__c.Date__c}"/>
+            <apex:inputField value="{!Patient__c.Title__c}"/>
+            <apex:inputField value="{!Patient__c.Name__c}"/>
+            <apex:inputField value="{!Patient__c.Age__c}"/>
+            <apex:inputField value="{!Patient__c.consultant__c}"/>
+            <apex:inputField value="{!Patient__c.Email__c}"/>
+            <apex:inputField value="{!Patient__c.Height_cm__c}"/>
+            <apex:inputField value="{!Patient__c.Weight_Kg__c}"/>
+             <apex:inputField value="{!Patient__c.Sex__c}"/>
+             <apex:inputField value="{!Patient__c.Ref_By__c}"/>
+              <apex:inputField value="{!Patient__c.Mobile_No__c}"/>
+              <apex:inputField value="{!Patient__c.Occupation__c}"/>
+              <apex:inputField value="{!Patient__c.Address__c}"/>
+              <apex:inputField value="{!Patient__c.Landline_No__c}"/>
+            </apex:pageBlockSection>
+        <apex:pageBlockButtons >
+            <apex:commandButton value="save" action="{!save}"/>
+             <apex:commandButton value="cancel" action="{!cancel}"/>
+            <apex:commandLink value="Add New Ref Doctor" />
+        </apex:pageBlockButtons>
+   
+        
+        </apex:pageblock>
+        </apex:form>
+</apex:page>
